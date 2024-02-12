@@ -6,9 +6,9 @@ from rich import print as rprint
 from importlib import import_module
 from typing import Annotated
 
-from helpers.constants import PUZZLE_MAPPER
-from helpers.functions import validate_day, validate_phase, validate_year, create_day
-from console import console
+from aocli.cli.helpers.constants import PUZZLE_MAPPER
+from aocli.cli.helpers.functions import validate_day, validate_phase, validate_year, create_day
+from aocli.cli import console
 
 app = typer.Typer()
 
@@ -34,7 +34,7 @@ def generate(year: Annotated[int, typer.Option()]):
     puzzles_path = join(os.getcwd(), "aocli\puzzles")
     folder_name = f"year{year}"
     folder_path = join(puzzles_path, folder_name)
-    with console.status("🤖 Generating puzzle folder ..."):
+    with console.console.status("🤖 Generating puzzle folder ..."):
         try:
             os.makedirs(folder_path)
         except FileExistsError:
@@ -47,7 +47,7 @@ def generate(year: Annotated[int, typer.Option()]):
         for i in range(25):
             create_day(i + 1)
             os.chdir(folder_path)
-        console.log(f"🔥 Done ! You can now start to solve puzzles !\n⚠️  Don't forget to add your inputs")
+        console.console.log(f"🔥 Done ! You can now start to solve puzzles !\n⚠️  Don't forget to add your inputs")
         
 
 if __name__ == "__main__":
