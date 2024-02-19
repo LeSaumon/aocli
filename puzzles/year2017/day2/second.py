@@ -2,7 +2,7 @@ from re import findall
 from os.path import join
 from rich import print as rprint
 
-def check( data):
+def check(data: list[int]) -> tuple[int, int]:
 	for val in data:
 		if res := list(filter(lambda x: val % x == 0 and val != x , data)):
 			return (res[0], val)
