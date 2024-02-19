@@ -6,7 +6,7 @@ This is my home-made CLI to work on Advent of Code's puzzles
 
 - [x] [Jour 1](https://adventofcode.com/2017/day/1)
 - [x] [Jour 2](https://adventofcode.com/2017/day/2)
-- [ ] [~~ Jour 3~~](https://adventofcode.com/2017/day/3)
+- [ ] ~~[Jour 3](https://adventofcode.com/2017/day/3)~~
 - [x] [Jour 4](https://adventofcode.com/2017/day/4)
 - [ ] [Jour 5](https://adventofcode.com/2017/day/5)
 - [ ] [Jour 6](https://adventofcode.com/2017/day/6)
