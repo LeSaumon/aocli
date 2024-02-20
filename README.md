@@ -5,6 +5,18 @@ This is my home-made CLI to work on Advent of Code's puzzles.
 This repository does not contains the puzzles text nor the puzzles inputs, as stated by the creator in his [about page](https://adventofcode.com/2023/about).
 > *If you're posting a code repository somewhere, please don't include parts of Advent of Code like the puzzle text or your inputs.*
 
+## Usage
+
+Solving a puzzle
+```bash
+python cli/main.py solve --year 2022 --day 8 --phase 2
+```
+
+Generate the folder structure and the files for the given year
+```bash
+python cli/main.py generate --year 2023
+```
+
 ## 2017
 
 - [x] [Jour 1](https://adventofcode.com/2017/day/1)
