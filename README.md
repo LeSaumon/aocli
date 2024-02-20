@@ -1,6 +1,9 @@
 # Aocli
 
-This is my home-made CLI to work on Advent of Code's puzzles
+This is my home-made CLI to work on Advent of Code's puzzles.
+
+This repository does not contains the puzzles text nor the puzzles inputs, as stated by the creator in his [about page](https://adventofcode.com/2023/about).
+> *If you're posting a code repository somewhere, please don't include parts of Advent of Code like the puzzle text or your inputs.*
 
 ## 2017
 
